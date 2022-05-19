@@ -1,0 +1,31 @@
+<div class="container">
+    <form>
+
+        <div fxLayout="row" fxLayoutAlign="center none">
+
+            <div fxFlex="90%" fxFlex.md="100%" fxFlex.sm="100%" fxFlex.xs="100%">
+                <h1 class="title-form">Pokémon</h1>
+                <h3 class="subtitle-form">Selecciona 3 Pokémon para que sean parte de tu equipo</h3>
+
+                <div class="pokemon-container" fxLayout="row wrap" fxLayoutGap="16px grid">
+                    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7]">
+                        <mat-card>
+                            <img class="img-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="">
+                            <div class="pokemon-name">
+                                <span>#001</span>
+                                <span>Bulbasur</span>
+                            </div>
+                        </mat-card>
+                    </div>
+                  </div>
+
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <button fxFlex="60%" mat-raised-button color="primary">Continuar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+</div>

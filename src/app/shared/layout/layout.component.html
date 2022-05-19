@@ -1,12 +1,12 @@
 <div class="navbar-container" [class.example-is-mobile]="mobileQuery.matches">
 
   <!-- Top navbar -->
-  <mat-toolbar class="navbar" color="primary">
+  <mat-toolbar class="navbar">
+
+    
 
     <a class="navbar-brand" [routerLink]="['/']" matTooltip="Home">
-      <h1>
-        Poke
-      </h1>
+      <img class="logo navbar-brand" src="../../../assets/images/logo.svg" alt="">
     </a>
 
     <span class="navbar-spacer"></span>
@@ -50,17 +50,11 @@
   </mat-toolbar>
 
   <mat-sidenav-container class="navbar-sidenav-container">
+    <!-- Side nav -->
+
     <!-- Main content -->
     <mat-sidenav-content class="sidenav-content">
-
-      <div class="progress-bar-container">
-        <mat-progress-bar color="accent" mode="indeterminate" *ngIf="spinnerService.visibility | async">
-        </mat-progress-bar>
-      </div>
-
-
       <router-outlet></router-outlet>
-
     </mat-sidenav-content>
   </mat-sidenav-container>
 

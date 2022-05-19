@@ -1,18 +1,30 @@
 <div class="container" fxLayout="row" fxLayoutAlign="center none">
-
-  <div fxFlex="95%">
-    <div class="container" fxLayout="row" fxLayoutAlign="center none">
-
-      <h2>Welcome back, name!</h2>
-
-    </div>
-
-    <div class="container" fxLayout="row" fxLayoutAlign="center none">
-      <div fxFlex="50%" class="text-center no-records animate">
-        <mat-icon>dashboard</mat-icon>
-        <p>This is the dashboard.</p>
-      </div>
-      <mat-icon> </mat-icon>
-    </div>
+  <div fxFlex="85%">
+    <p class="title">
+      <mat-icon class="icon-title">keyboard_arrow_left</mat-icon>
+      ¡Hola! Configuremos tu perfil</p>
+    <p class="subtitle">Queremos conocerte mejor.</p>
   </div>
+</div>
+
+<div class="container" fxLayout="row" fxLayoutAlign="center none">
+
+  <div fxFlex="85%" fxFlex.md="90%" fxFlex.sm="55%" fxFlex.xs="95%">
+
+        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+          <div fxFlex="45%" fxFlex.md="50%" fxFlex.sm="95%" fxFlex.xs="95%" fxLayoutAlign="center center">
+            <app-profile fxFlex="70%" fxFlex.md="80%" fxFlex.sm="100%" fxFlex.xs="100%"></app-profile>
+          </div>
+
+
+          <div fxFlex="55%" fxFlex.md="50%" fxFlex.sm="95%" fxFlex.xs="95%">
+            <!-- <app-profile-form></app-profile-form> -->
+            <app-pokemon-select></app-pokemon-select>
+          </div>
+
+        </div>
+  </div>
+
+
 </div>

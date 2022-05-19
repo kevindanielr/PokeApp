@@ -1,0 +1,48 @@
+.password-rules .mat-divider {
+    position: unset !important;
+}
+.container{
+    padding-top: 20px;
+}
+
+.title-form {
+    font-weight: 400;
+    color: #01426A;
+}
+
+.subtitle-form {
+    height: 54px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #868686;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+mat-card {
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 130px;
+}
+
+.img-pokemon {
+    width: 150px;
+}
+
+.pokemon-container {
+    padding-bottom: 40px;
+}
+
+.pokemon-name {
+    color: white;
+    padding: 6px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #01426A;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
